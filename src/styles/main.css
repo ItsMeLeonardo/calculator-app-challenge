@@ -56,7 +56,8 @@ body.theme-light {
   --key-shadow-numbers: hsl(35, 11%, 61%);
 
   /* Text */
-  --very-dark: hsl(60, 10%, 19%);
+  --very-dark: hsl(0, 0%, 100%);
+  --white-text: hsl(60, 10%, 19%);    
 }
 body.theme-purple {
   /* Colors */
@@ -103,6 +104,12 @@ body.theme-purple {
   color: var(--white-text);
   font-weight: 400;
 }
+.theme-purple .calc__logo,
+.theme-purple .calc__options-text,
+.theme-purple .calc__label-text {
+    color: var(--light-yellow);
+}
+
 .calc__themes {
   display: flex;
   gap: 1.25rem;
@@ -164,6 +171,12 @@ body.theme-purple {
   font-size: var(--number-size);
   color: var(--white-text);
 }
+.theme-light .calc__btn {
+    color: var(--white-text)
+}
+.theme-purple .calc__btn {
+    color: var(--light-yellow)
+}
 
 .calc__btns {
   --size: 4rem;
@@ -188,7 +201,7 @@ body.theme-purple {
   color: var(--very-dark);
   border-radius: var(--btn-radius);
   cursor: pointer;
-  box-shadow: 0 0.35rem 0 0 var(--key-shadow-numbers);
+  box-shadow: 0 0.25rem 0 0 var(--key-shadow-numbers);
   transition: opacity 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .calc__btn:hover {
@@ -207,12 +220,19 @@ body.theme-purple {
   font-size: 1rem;
   background: var(--key-bg-reset);
   color: var(--white-text);
-  box-shadow: 0 0.35rem 0 0 var(--key-shadow-reset);
+  box-shadow: 0 0.25rem 0 0 var(--key-shadow-reset);
 }
 .calc__btn-equal {
   color: var(--white-text);
   background: var(--key-bg-equal);
-  box-shadow: 0 0.35rem 0 0 var(--key-shadow-equal);
+  box-shadow: 0 0.25rem 0 0 var(--key-shadow-equal);
+}
+.theme-purple .calc__btn-del,
+.theme-purple .calc__btn-reset {
+    color: var(--white-text);
+}
+.theme-purple .calc__btn-equal {
+    color: var(--very-dark)
 }
 
 @media screen and (min-width: 768px) {
