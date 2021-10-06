@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="src/styles/main.css">
+    <script src="src/js/main.js" defer></script>
+    <title>Calculator app</title>
+  </head>
+  <body class="theme-light">
+    <section class="calc">
+      <div class="calc__header">
+        <h3 class="calc__logo">calc</h3>
+        <div class="calc__options">
+          <span class="calc__options-text">THEME</span>
+          <div class="calc__themes">
+            <label class="calc__label" for="dark">
+              <span class="calc__label-text">1</span>
+              <input type="radio" name="theme" id="dark" class="calc__theme-input" />
+            </label>
+
+            <label class="calc__label" for="light">
+              <span class="calc__label-text">2</span>
+              <input type="radio" name="theme" id="light" class="calc__theme-input" />
+            </label>
+
+            <label class="calc__label" for="purple">
+              <span class="calc__label-text">3</span>
+              <input type="radio" name="theme" id="purple" class="calc__theme-input" />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="calc__screen">
+        <h3 class="calc__result">339</h3>
+      </div>
+      <div class="calc__btns">
+        <span class="calc__btn">7</span>
+        <span class="calc__btn">8</span>
+        <span class="calc__btn">9</span>
+        <span class="calc__btn calc__btn-del">DEL</span>
+        <span class="calc__btn">4</span>
+        <span class="calc__btn">5</span>
+        <span class="calc__btn">6</span>
+        <span class="calc__btn">+</span>
+        <span class="calc__btn">1</span>
+        <span class="calc__btn">2</span>
+        <span class="calc__btn">3</span>
+        <span class="calc__btn calc__btn-minus">-</span>
+        <span class="calc__btn calc__btn-point">.</span>
+        <span class="calc__btn">0</span>
+        <span class="calc__btn calc__btn-divide">/</span>
+        <span class="calc__btn calc__btn-multiply">x</span>
+        <span class="calc__btn calc__btn-reset">RESET</span>
+        <span class="calc__btn calc__btn-equal"> =</span>
+      </div>
+    </section>
+  </body>
+</html>
