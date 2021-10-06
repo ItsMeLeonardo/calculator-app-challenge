@@ -1,5 +1,5 @@
 /*For themes*/
-const position = [".15rem", "1.3rem", "3rem"];
+const position = [".15rem", "1.5rem", "3rem"];
 const classThemes = ["", "theme-light", "theme-purple"];
 const themes = document.querySelectorAll(".calc__label"),
   body = document.querySelector("body");
